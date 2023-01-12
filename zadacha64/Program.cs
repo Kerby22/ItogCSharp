@@ -1,6 +1,9 @@
-﻿int num = 5;//определяем первоначальное значение
+﻿ Console.Clear();
+ int num = 5;
 void NumCnt (int num)
-{Console.Write(num);
-NumCnt (num - 1);
-}
-NumCnt(num);
+        {
+            if (num == 0) return;
+            Console.Write("{0,2}",num);
+            NumCnt (num - 1);
+        }
+        NumCnt(num);
